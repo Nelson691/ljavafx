@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="531.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.sysasisgui.control.AsistenciaControl">
+   <children>
+      <Pane layoutX="5.0" layoutY="5.0" nodeOrientation="LEFT_TO_RIGHT" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Label layoutX="14.0" layoutY="35.0" prefHeight="17.0" prefWidth="102.0" text="Registra Asistencia" textFill="#2300ff" />
+            <Button fx:id="btnGuardar" layoutX="154.0" layoutY="31.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="60.0" text="Guardar" />
+            <TableView fx:id="TableRegAsis" layoutX="14.0" layoutY="95.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+            <Label layoutX="328.0" layoutY="35.0" text="Lista de Asistencia" textFill="#0011ff" />
+            <TableView fx:id="table" layoutX="328.0" layoutY="95.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
